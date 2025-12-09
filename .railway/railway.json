@@ -1,0 +1,12 @@
+{
+  "build": {
+    "builder": "heroku/php",
+    "env": {
+      "COMPOSER_ALLOW_SUPERUSER": "1",
+      "RAILS_ENV": "production"
+    }
+  },
+  "deploy": {
+    "startCommand": "php artisan serve --host=0.0.0.0 --port=$PORT"
+  }
+}
